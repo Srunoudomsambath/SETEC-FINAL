@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link rel="stylesheet" href="css/blog.css">
+        <link rel="stylesheet" href="css/index.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
          <title>TravelGoup8 - Explore Cambodia</title>
@@ -24,21 +24,26 @@
 </head>
 <body>
      <!-- Header -->
-   <header class="header">
-        <div class="nav-container">
-            <div class="logo">Travel<span>Goup8</span></div>
-            <nav>
-                <a href="/index.html"  style="color: orange">  Home</a>
-                <a href="/explore.html ">Explore</a>
-                <a href="/about.html">About us</a>
-                <a href="/contact.html">Contact us</a>
-            </nav>
-            <a href="/login.html" class="login-btn">
-            <div class="login" style="font-weight: bold;">Login / Signup</div>
-            </a>
+ <header class="header">
+    <div class="nav-container">
+        <div class="logo">Travel<span>Goup8</span></div>
+
+        <nav id="nav-links">
+            <a href="/index.html" style="color: orange">Home</a>
+            <a href="/explore.html">Explore</a>
+            <a href="/about.html" >About us</a>
+            <a href="/contact.html">Contact us</a>
+            <a href="/login.html" class="login-btn">Login / Signup</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
-     
+    </div>
+</header>
 <!-- Carousel Section -->
 <div class="carousel-full">
   <header class="c-header c-header--archive c-header--project-list">
@@ -362,6 +367,14 @@
 
 
 <script>
+
+  const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
 const words1 = [
   "Bayon Temples",
   "Khnang Phsa",
