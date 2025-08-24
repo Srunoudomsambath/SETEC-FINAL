@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Travel Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-container {
+            background: white;
+            width: 100%;
+            height: 400px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+        }
+        
+        .login-container h1 {
+            text-align: center;
+            color: orange;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 14px;
+            transition: border 0.3s ease;
+        }
+        
+        input:focus {
+            border: 1px solid orange;
+        }
+        
+        .toggle-password {
+            font-size: 12px;
+            color: red;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .error-msg {
+            font-size: 12px;
+            color: red;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: rgb(236, 154, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <div id="emailError" class="error-msg"></div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <a href="#" class="toggle-password" id="togglePassword">Show Password</a>
+            <div id="passwordError" class="error-msg"></div>
+            
+            <button type="submit" id="loginButton">Login</button>
+        </form>
+    </div>
+
+    <script>
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+        const togglePassword = document.getElementById('togglePassword');
+
+        // Show/Hide Password
+        togglePassword.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                togglePassword.textContent = "Hide Password";
+            } else {
+                passwordInput.type = "password";
+                togglePassword.textContent = "Show Password";
+            }
+        });
+
+        // Form Validation
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            let valid = true;
+            emailError.textContent = '';
+            passwordError.textContent = '';
+
+            const emailRegex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[^0-9a-zA-Z]).{8,}$/;
+
+            if (!emailRegex.test(emailInput.value)) {
+                emailError.textContent = 'Invalid email format';
+                valid = false;
+            }
+
+            if (!passwordRegex.test(passwordInput.value)) {
+                passwordError.textContent = 'Password must contain uppercase, lowercase, number, special char & be 8+ chars';
+                valid = false;
+            }
+
+            if (valid) {
+                alert('Login Successful!');
+                window.location.href = '/home.html'; // Redirect to home page
+
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>

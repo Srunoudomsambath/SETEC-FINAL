@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">Travel<span>Goup8</span></div>
+            <nav>
+                <a href="/home.html">Home</a>
+                <a href="/explore.html "  style="color: orange;">Explore</a>
+                <a href="/about.html">About us</a>
+                <a href="/contact.html">Contact us</a>
+            </nav>
+            <a href="/login.html" class="login-btn">
+            <div class="login" style="font-weight: bold;">Login / Signup</div>
+            </a>
+        </div>
+    </header>
+     <div class="hero">
+            <h1>Explore The World Today</h1>
+            <p>Discover amazing places and unforgettable experiences</p>
+            <div class="search-box">
+                <input type="text" id="location" placeholder="Location">
+                <input type="text" id="tourName" placeholder="Tour Name">
+                <input type="date" id="date">
+                <input type="number" id="person" placeholder="Person">
+                <button id="findBtn">Find Now</button>
+            </div>
+        </div>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <h1>💰</h1>
+            <h3>Discount Price</h3>
+            <p>Get the best deals for your dream vacation.</p>
+        </div>
+        <div class="feature">
+            <h1>📅</h1>
+            <h3>Easy to Booking</h3>
+            <p>Book your trip easily and quickly.</p>
+        </div>
+        <div class="feature">
+            <h1>📞</h1>
+            <h3>24/7 Support</h3>
+            <p>We are here to help you anytime.</p>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations">
+        <h2>Our Top Destinations</h2>
+        <div id="destinationList" class="destination-cards">
+            <div class="card">
+                <img src="/images/travel1.jpg">
+                <h4>Paris, France</h4>
+                <p>City of lights and romance.</p>
+            </div>
+            <div class="card">
+                <img src="/images/travel2.jpg">
+                <h4>Bali, Indonesia</h4>
+                <p>Tropical beaches and relaxation.</p>
+            </div>
+            <div class="card">
+                <img src="/images/travel3.jpg">
+                <h4>Hanoi, Vietnam</h4>
+                <p>The city that never sleeps.</p>
+            </div>
+        </div>
+        <button id="showMoreBtn">Show More</button>
+    </section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="#">
+          <span>TravelGoup8</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+   <div class="footer-bottom">
+      <p>© 2025 TravelGoup8. All rights reserved.</p>
+      <div class="social-icons">
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 5.012 3.657 9.165 8.438 9.879v-6.987h-2.54V12h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.892h-2.33v6.987C18.343 21.165 22 17.012 22 12z"/>
+          </svg>
+        </a>
+        <!-- Discord -->
+        <a href="#" aria-label="Discord">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 71 55">
+            <path d="M60.104 4.552A58.816 58.816 0 0046.939.3a41.856 41.856 0 00-1.948 4.064 56.896 56.896 0 00-16.785 0A41.648 41.648 0 0026.257.3 58.768 58.768 0 0013.092 4.552c-8.077 11.92-10.834 23.408-9.623 34.641 8.746 6.431 17.036 10.338 25.06 12.807 1.851-2.547 3.495-5.217 4.91-7.985a37.805 37.805 0 01-6.02-2.854c.507-.373.997-.77 1.471-1.184a47.567 47.567 0 0024.24 0c.473.414.963.811 1.471 1.184a37.703 37.703 0 01-6.02 2.854c1.415 2.768 3.058 5.438 4.91 7.985 8.024-2.469 16.314-6.376 25.06-12.807 1.21-11.233-1.546-22.721-9.623-34.641zm-36.05 30.546c-3.142 0-5.707-2.874-5.707-6.412 0-3.538 2.541-6.412 5.707-6.412 3.171 0 5.73 2.874 5.707 6.412 0 3.538-2.536 6.412-5.707 6.412zm21.896 0c-3.142 0-5.707-2.874-5.707-6.412 0-3.538 2.541-6.412 5.707-6.412 3.171 0 5.73 2.874 5.707 6.412 0 3.538-2.536 6.412-5.707 6.412z"/>
+          </svg>
+        </a>
+        <!-- Twitter -->
+        <a href="#" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.38 4.482A13.936 13.936 0 011.671 3.149a4.918 4.918 0 001.523 6.556 4.902 4.902 0 01-2.229-.616c-.054 2.28 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.922 4.922 0 004.6 3.417 9.867 9.867 0 01-6.102 2.104c-.396 0-.788-.023-1.175-.069a13.945 13.945 0 007.557 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.213-.004-.425-.014-.637A9.936 9.936 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="#" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 .297a12 12 0 00-3.797 23.419c.6.111.82-.261.82-.58v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.389-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.468-2.381 1.236-3.222-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.46 11.46 0 013.003-.404c1.018.005 2.043.137 3.003.404 2.289-1.552 3.294-1.23 3.294-1.23.655 1.649.243 2.873.12 3.176.771.841 1.234 1.912 1.234 3.222 0 4.609-2.807 5.624-5.48 5.921.43.37.814 1.096.814 2.21v3.293c0 .322.218.697.825.578A12.004 12.004 0 0012 .297z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

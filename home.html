@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/blog.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</head>
+<body>
+     <!-- Header -->
+   <header class="header">
+        <div class="nav-container">
+            <div class="logo">Travel<span>Goup8</span></div>
+            <nav>
+                <a href="/home.html"  style="color: orange">  Home</a>
+                <a href="/explore.html ">Explore</a>
+                <a href="/about.html">About us</a>
+                <a href="/contact.html">Contact us</a>
+            </nav>
+            <a href="/login.html" class="login-btn">
+            <div class="login" style="font-weight: bold;">Login / Signup</div>
+            </a>
+        </div>
+    </header>
+     
+<!-- Carousel Section -->
+<div class="carousel-full">
+  <header class="c-header c-header--archive c-header--project-list">
+    <div class="c-mouse-vertical-carousel js-carousel u-media-wrapper u-media-wrapper--16-9">
+      <ul class="c-mouse-vertical-carousel__list js-carousel-list">
+        <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="0">
+          <a href="">
+            <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+              <span>01</span> Phnom Penh
+            </p>
+            <p class="c-mouse-vertical-carousel__title u-a5">Royal Palace</p>
+          </a>
+        </li>
+        <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="1">
+          <a href="">
+            <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+              <span>02</span>   Siem Reap
+            </p>
+            <p class="c-mouse-vertical-carousel__title u-a5">Angkor Wat</p>
+          </a>
+        </li>
+        <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="2">
+          <a href="">
+            <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+              <span>03</span> Mondolkiri
+            </p>
+            <p class="c-mouse-vertical-carousel__title u-a5">Bou Sra waterfalls</p>
+          </a>
+        </li>
+        <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="3">
+          <a href="">
+            <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+              <span>04</span> Sihanoukville
+            </p>
+            <p class="c-mouse-vertical-carousel__title u-a5">Koh Preap</p>
+          </a>
+        </li>
+
+        <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="4">
+          <a href="">
+            <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+              <span>05</span>Kam Pot
+            </p>
+            <p class="c-mouse-vertical-carousel__title u-a5">Bokor Mountain</p>
+          </a>
+        </li>
+        <li class="c-mouse-vertical-carousel__list-item js-carousel-list-item" data-item-id="5">
+          <a href="">
+            <p class="c-mouse-vertical-carousel__eyebrow u-b4">
+              <span>07</span>koh Kong
+            </p>
+            <p class="c-mouse-vertical-carousel__title u-a5">Canvas & Orchids Retreat</p>
+          </a>
+        </li>
+      </ul>
+      <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.novotelphnompenhbkk1.com/wp-content/uploads/sites/53/2023/08/royal-palace-1920x1200.jpg')"></i>
+      <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://scontent.fpnh9-2.fna.fbcdn.net/v/t39.30808-6/470207196_1154769486154570_6353939201671860275_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=y188eYK4zlUQ7kNvwE2hoyr&_nc_oc=AdnljOd8YieRNiBsQW5ovOT198YJnSm4yhq8-C1dPsee4pQsg-2kauecNL4ReZl5Rco&_nc_zt=23&_nc_ht=scontent.fpnh9-2.fna&_nc_gid=oy-DVTsBaZ3xMWt3MvWhmg&oh=00_AfXwkoDtpq6fvSTwrDWB3bLcG0A9Uelzn9YDhRPNpZxuVw&oe=68B023B8')"></i>
+      <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.greeneratravel.com/userfiles/850bousrawaterfall.jpg')"></i>
+      <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.greeneratravel.com/userfiles/850x450-sihanoukville.jpg')"></i>
+            <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.asiapropertyawards.com/wp-content/uploads/2024/06/shutterstock_1707022465-scaled.jpg')"></i>
+      <i class="c-mouse-vertical-carousel__bg-img js-carousel-bg-img" style="background-image: url('https://www.greenpearls.com/wp-content/uploads/2019/10/eco-lodge-floating-4rivers-cambodia.webp')"></i>
+
+      
+
+      <i class="c-gradient-overlay"></i>
+    </div>
+  </header>
+</div>
+<div >
+<!-- From Uiverse.io by gharsh11032000 --> 
+<section class="blog-section">
+  <div class="container">
+
+    <!-- Typewriter -->
+    <div class="typewriter-container">
+      <h1 id="typewriter"></h1>
+       <p class="subtitle">Discover the wonders of Angkor Wat, Khmer culture, and Cambodia’s hidden gems.</p>
+    </div>
+
+    <!-- Carousel Slider -->
+   <div class="slider slider-left" style="--width: 300px; --height: 320px; --quantity: 6;">
+      <div class="list">
+
+        <!-- Card Item 1 -->
+        <div class="item" style="--position:1">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="https://www.greeneratravel.com/userfiles/thumbs/photo_2025-03-10_17-11-28.jpg" alt="Royal Palace">
+              </div>
+              <div class="content">
+                <p class="heading">Angkor Wat</p>
+                <p>Half-Day Angkor Wat Afternoon Tour with Sunset</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Item 2 -->
+        <div class="item" style="--position:2">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="https://www.greeneratravel.com/userfiles/thumbs/620x400-nationalmuseum.jpg" alt="Angkor Wat">
+              </div>
+              <div class="content">
+                <p class="heading">Phnom Penh </p>
+                <p>Phnom Penh Small Group City Tour, Silver Pagoda, Genocide Museum, Killing Fields</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Item 1 -->
+        <div class="item" style="--position:4">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/12/4c/ca/35.jpg" alt="Royal Palace">
+              </div>
+              <div class="content">
+                <p class="heading">Bokor</p>
+                <p>Experience the grandeur of Bokor Mountain.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Item 1 -->
+        <div class="item" style="--position:5">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="https://www.greeneratravel.com/userfiles/thumbs/helicopter-ride-slider-1.jpg" alt="Royal Palace">
+              </div>
+              <div class="content">
+                <p class="heading">Helicopter ride</p>
+                <p>Angkor Wat plus Helicopter ride with Khmer Lunch (6-7h)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Item 1 -->
+        <div class="item" style="--position:6">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="https://www.greeneratravel.com/userfiles/thumbs/SHV1.jpg" alt="Royal Palace">
+              </div>
+              <div class="content">
+                <p class="heading">Sihanoukville Tour</p>
+                <p>Private Sihanoukville Tour for Cruise Ship Passengers </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Card Item 3 -->
+        <div class="item" style="--position:3">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-content">
+                <img src="https://www.ourtravelsoup.com/wp-content/uploads/2019/04/kampot-featured.jpg" alt="Otres Beach">
+              </div>
+              <div class="content">
+                <p class="heading">Kam Pot</p>
+                <p>Kampot and Kep Excursion from Sihanoukville</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+</section>
+</div>
+
+
+<section class="tracing-beam-section">
+  <div class="container">
+    <div class="typewriter-container1">
+      <h1 id="typewriter1"></h1>
+       <p class="subtitle1">Discover the wonders of Angkor Wat, Khmer culture, and Cambodia’s hidden gems.</p>
+    </div>
+
+    <div class="feature">
+      <img src="https://theangkorguide.net/userfiles/slideshow_2.jpg" alt="Temples" class="feature-image">
+      <div class="feature-content">
+        <span class="badge">Temples</span>
+        <h2 class="feature-title">Bayon Temples</h2>
+        <p>
+          Visit the iconic Bayon Temple in the heart of Angkor Thom, famous for its massive stone faces carved into towers.
+        </p>
+        <p>
+          Explore the intricate bas-reliefs depicting Khmer history, mythology, and everyday life, making it a photographer’s paradise.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/94/c7/bb.jpg" alt="Nature" class="feature-image">
+      <div class="feature-content">
+        <span class="badge">Nature</span>
+        <h2 class="feature-title">Khnang Phsa</h2>
+        <p>
+          Explore the peaceful Khnang Phsa area with its rolling hills, dense forests, and scenic rivers, ideal for hiking and nature walks.
+        </p>
+        <p>
+          Spot local wildlife, enjoy birdwatching, and immerse yourself in the serenity of Cambodia’s countryside.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="https://www.greeneratravel.com/userfiles/thumbs/620x400-independence.jpg" alt="City" class="feature-image">
+      <div class="feature-content">
+        <span class="badge">City</span>
+        <h2 class="feature-title">Phnom Penh City</h2>
+        <p>
+          Discover Phnom Penh, Cambodia’s vibrant capital, with its lively markets, riverside promenade, and historical landmarks.
+        </p>
+        <p>
+          Visit the Royal Palace, National Museum, and local street food spots to experience the city’s rich culture and modern energy.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="https://www.siemreapshuttle.com/wp-content/uploads/elementor/thumbs/Kulen-Waterfall-Tour-pu30volwww2029reunowrb9mpzy2zwbdjwetfnu8g0.jpg" alt="Nature" class="feature-image">
+      <div class="feature-content">
+        <span class="badge">Nature</span>
+        <h2 class="feature-title">Kulen Waterfalls</h2>
+        <p>
+          Visit Kulen Waterfalls, a stunning natural landmark surrounded by lush forest and sacred sites like the reclining Buddha.
+        </p>
+        <p>
+          Swim in the crystal-clear pools, enjoy the cascading waters, and explore the scenic trails nearby for a perfect nature retreat.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="#">
+          <span>TravelGoup8</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+   <div class="footer-bottom">
+      <p>© 2025 TravelGoup8. All rights reserved.</p>
+      <div class="social-icons">
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 5.012 3.657 9.165 8.438 9.879v-6.987h-2.54V12h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.892h-2.33v6.987C18.343 21.165 22 17.012 22 12z"/>
+          </svg>
+        </a>
+        <!-- Discord -->
+        <a href="#" aria-label="Discord">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 71 55">
+            <path d="M60.104 4.552A58.816 58.816 0 0046.939.3a41.856 41.856 0 00-1.948 4.064 56.896 56.896 0 00-16.785 0A41.648 41.648 0 0026.257.3 58.768 58.768 0 0013.092 4.552c-8.077 11.92-10.834 23.408-9.623 34.641 8.746 6.431 17.036 10.338 25.06 12.807 1.851-2.547 3.495-5.217 4.91-7.985a37.805 37.805 0 01-6.02-2.854c.507-.373.997-.77 1.471-1.184a47.567 47.567 0 0024.24 0c.473.414.963.811 1.471 1.184a37.703 37.703 0 01-6.02 2.854c1.415 2.768 3.058 5.438 4.91 7.985 8.024-2.469 16.314-6.376 25.06-12.807 1.21-11.233-1.546-22.721-9.623-34.641zm-36.05 30.546c-3.142 0-5.707-2.874-5.707-6.412 0-3.538 2.541-6.412 5.707-6.412 3.171 0 5.73 2.874 5.707 6.412 0 3.538-2.536 6.412-5.707 6.412zm21.896 0c-3.142 0-5.707-2.874-5.707-6.412 0-3.538 2.541-6.412 5.707-6.412 3.171 0 5.73 2.874 5.707 6.412 0 3.538-2.536 6.412-5.707 6.412z"/>
+          </svg>
+        </a>
+        <!-- Twitter -->
+        <a href="#" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.38 4.482A13.936 13.936 0 011.671 3.149a4.918 4.918 0 001.523 6.556 4.902 4.902 0 01-2.229-.616c-.054 2.28 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.922 4.922 0 004.6 3.417 9.867 9.867 0 01-6.102 2.104c-.396 0-.788-.023-1.175-.069a13.945 13.945 0 007.557 2.212c9.054 0 14.002-7.496 14.002-13.986 0-.213-.004-.425-.014-.637A9.936 9.936 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="#" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+            <path d="M12 .297a12 12 0 00-3.797 23.419c.6.111.82-.261.82-.58v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.389-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.468-2.381 1.236-3.222-.124-.303-.536-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.46 11.46 0 013.003-.404c1.018.005 2.043.137 3.003.404 2.289-1.552 3.294-1.23 3.294-1.23.655 1.649.243 2.873.12 3.176.771.841 1.234 1.912 1.234 3.222 0 4.609-2.807 5.624-5.48 5.921.43.37.814 1.096.814 2.21v3.293c0 .322.218.697.825.578A12.004 12.004 0 0012 .297z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+<script>
+const words1 = [
+  "Bayon Temples",
+  "Khnang Phsa",
+  "Phnom Penh City",
+  "Kulen Waterfalls"
+];
+
+let i1 = 0; // word index
+let j1 = 0; // letter index
+let currentWord1 = "";
+let isDeleting1 = false;
+
+function typeWriter() {
+  const typewriterElement = document.getElementById("typewriter1");
+  currentWord1 = words1[i1];
+
+  if (isDeleting1) {
+    typewriterElement.textContent = currentWord1.substring(0, j1 - 1);
+    j1--;
+    if (j1 === 0) {
+      isDeleting1 = false;
+      i1 = (i1 + 1) % words1.length;
+    }
+  } else {
+    typewriterElement.textContent = currentWord1.substring(0, j1 + 1);
+    j1++;
+    if (j1 === currentWord1.length) {
+      isDeleting1 = true;
+    }
+  }
+
+  setTimeout(typeWriter, isDeleting1 ? 50 : 100);
+}
+
+window.addEventListener("DOMContentLoaded", typeWriter);
+
+ const features = document.querySelectorAll('.feature');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.2 });
+
+  features.forEach(feature => {
+    feature.style.opacity = 0;
+    feature.style.transform = 'translateY(50px)';
+    feature.style.transition = 'all 0.6s ease-out';
+    observer.observe(feature);
+  });
+// Typewriter Effect
+// ===== Typewriter Effect =====
+
+const words = [
+  "Discover Ancient Temples",
+  "Journey Through Khmer Culture",
+  "Experience Cambodia's Beauty"
+];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+  currentWord = words[i];
+  if (isDeleting) {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+    j--;
+    if (j === 0) {
+      isDeleting = false;
+      i++;
+      if (i === words.length) i = 0;
+    }
+  } else {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+    j++;
+    if (j === currentWord.length) {
+      isDeleting = true;
+    }
+  }
+  setTimeout(type, 100);
+}
+
+type();
+
+class VerticalMouseDrivenCarousel {
+  constructor(options = {}) {
+    this.defaults = Object.assign({
+      carousel: ".js-carousel",
+      bgImg: ".js-carousel-bg-img",
+      list: ".js-carousel-list",
+      listItem: ".js-carousel-list-item"
+    }, options);
+
+    this.posY = 0;
+    this.init();
+    this.initCursor();
+    this.bgImgController();
+  }
+
+  getBgImgs() { return document.querySelectorAll(this.defaults.bgImg); }
+  getListItems() { return document.querySelectorAll(this.defaults.listItem); }
+  getList() { return document.querySelector(this.defaults.list); }
+  getCarousel() { return document.querySelector(this.defaults.carousel); }
+
+  init() {
+    TweenMax.set(this.getBgImgs(), {autoAlpha: 0, scale: 1.05});
+    TweenMax.set(this.getBgImgs()[0], {autoAlpha: 1, scale: 1});
+    this.getBgImgs()[0].classList.add("is-visible");
+    this.listItems = this.getListItems().length - 1;
+    this.listOpacityController(0);
+  }
+
+  initCursor() {
+    const listHeight = this.getList().clientHeight;
+    const carouselHeight = this.getCarousel().clientHeight;
+    this.getCarousel().addEventListener("mousemove", e => {
+      this.posY = e.pageY - this.getCarousel().offsetTop;
+      let offset = -(this.posY / carouselHeight * listHeight);
+      TweenMax.to(this.getList(), 0.3, {y: offset, ease: Power4.easeOut});
+    });
+  }
+
+  bgImgController() {
+    this.getListItems().forEach(link => {
+      link.addEventListener("mouseenter", e => {
+        let currentId = e.currentTarget.dataset.itemId;
+        this.listOpacityController(currentId);
+
+        document.querySelectorAll(".is-visible").forEach(el => el.classList.remove("is-visible"));
+        this.getBgImgs()[currentId].classList.add("is-visible");
+
+        TweenMax.to(this.getBgImgs(), 0.4, {autoAlpha: 0, scale: 1.05});
+        TweenMax.to(this.getBgImgs()[currentId], 0.6, {autoAlpha: 1, scale: 1});
+      });
+    });
+  }
+
+  listOpacityController(id) {
+    id = parseInt(id);
+    let aboveCurrent = this.listItems - id;
+    let belowCurrent = id;
+
+    if (aboveCurrent > 0) {
+      for (let i = 1; i <= aboveCurrent; i++) {
+        TweenMax.to(this.getListItems()[id + i], 0.5, {
+          autoAlpha: 0.5 / i, x: 5 * i, ease: Power3.easeOut
+        });
+      }
+    }
+    if (belowCurrent > 0) {
+      for (let i = 0; i <= belowCurrent; i++) {
+        TweenMax.to(this.getListItems()[id - i], 0.5, {
+          autoAlpha: 0.5 / (i || 1), x: 5 * i, ease: Power3.easeOut
+        });
+      }
+    }
+  }
+}
+
+new VerticalMouseDrivenCarousel();
+</script>
+
+</body>
+</html>

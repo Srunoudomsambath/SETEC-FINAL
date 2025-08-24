@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    color: #0f264d;
+}
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: orange;
+        }
+        
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0f264d;
+            font-weight: bold;
+        }
+        
+        .login {
+            cursor: pointer;
+        }
+
+
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Header */
+    .contact-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-header h1 {
+      font-size: 36px;
+      color: #ff9900; /* Secondary color */
+      margin-bottom: 10px;
+    }
+
+    .contact-header p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    .contact-header span {
+      font-weight: bold;
+      font-family: "Khmer OS", sans-serif;
+    }
+
+    /* Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media(min-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 2fr 3fr;
+      }
+    }
+
+    /* Left side */
+    .contact-info {
+      background-color: #0f264d; 
+      color: #fff;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 8px;
+    }
+
+    .contact-info h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #ff9900;
+    }
+
+    .contact-info p {
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .info-item svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      fill: #ff9900;
+      flex-shrink: 0;
+    }
+
+    .info-item div {
+      line-height: 1.5;
+    }
+
+    /* Social icons */
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: orange ;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .social-links a:hover {
+      background-color: #ff9900;
+    }
+
+    .social-links svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    /* Right side */
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #0f264d;
+    }
+
+    .contact-form button {
+      background-color: #0f264d;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+
+.login-btn {
+  color: white;        /* Make text white */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure div styling works inside link */
+}
+
+.login-btn:hover {
+  opacity: 0.8; /* Optional: subtle hover effect */
+}
+
+  
+/* Footer CSS */
+.footer {
+  background-color: #0a1a1f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-section h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: orange;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+hr {
+  border: 0.5px solid #333;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a svg {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover svg {
+  transform: scale(1.2);
+  fill: orange;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.login-btn {
+  color: white;        /* Make text white */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure div styling works inside link */
+}
+
+.login-btn:hover {
+  opacity: 0.8; /* Optional: subtle hover effect */
+}
